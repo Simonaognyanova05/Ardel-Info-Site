@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 export default function Contacts() {
     return (
         <section id="contact" class="tm-section-pad-top tm-parallax-2">
@@ -52,14 +54,7 @@ export default function Contacts() {
                 </div>
 
             </div>
-
-            <footer class="text-center small tm-footer">
-                <p class="mb-0">
-                    Copyright &copy; 2026 Ардел Груп
-
-                    . <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
-            </footer>
-
+            <Footer />
         </section>
     );
 }
