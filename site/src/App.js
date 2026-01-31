@@ -1,22 +1,20 @@
-import Competencies from "./components/Competencies";
-import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./components/Home";
+
+import Login from "./components/Login";
+import AllPages from "./components/AllPages";
 
 
 function App() {
   return (
     <>
-      <section id="infinite" class="text-white tm-font-big tm-parallax">
-        <Header />
-        <Home />
-      </section>
+      <Header />
 
-      <Competencies />
-      <Gallery />
-      <Contacts />
+
+      <Routes>
+        <Route path="/" element={<AllPages />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   );
 }
