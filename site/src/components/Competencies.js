@@ -17,24 +17,26 @@ export default function Competencies() {
 
                 <div class="row tm-content-box">
                     <div class="col-lg-1">
-                        <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
+                        <i class="fas fa-3x fa-briefcase tm-icon"></i>
+
                     </div>
                     <div class="col-lg-5">
                         <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Козметик</h2>
+                            <h2 class="tm-text-primary mb-4">Малък и среден бизнес</h2>
                             <p class="mb-4 tm-intro-text">
-                                Описание на обучението.</p>
+                                Втора степен на професионална квалификация</p>
                         </div>
                     </div>
 
                     <div class="col-lg-1">
-                        <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
+                        <i class="fas fa-3x fa-file-alt tm-icon"></i>
+
                     </div>
                     <div class="col-lg-5">
                         <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Сътрудник в бизнес-услуги</h2>
+                            <h2 class="tm-text-primary mb-4">Административни и офис дейности</h2>
                             <p class="mb-4 tm-intro-text">
-                                Описание</p>
+                                Първа, втора степен на професионална квалификация</p>
                         </div>
                     </div>
 
@@ -42,133 +44,126 @@ export default function Competencies() {
 
                 <div class="row tm-content-box">
                     <div class="col-lg-1">
-                        <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
+                        <i class="fas fa-3x fa-laptop-code tm-icon"></i>
                     </div>
                     <div class="col-lg-5">
                         <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Работник в малък и среден бизнес</h2>
+                            <h2 class="tm-text-primary mb-4">Икономическа информатика</h2>
                             <p class="mb-4 tm-intro-text">
-                                Описание</p>
+                                Втора степен на професионална квалификация</p>
 
                         </div>
                     </div>
 
                     <div class="col-lg-1">
-                        <i class="fas fa-3x fa-users text-center tm-icon"></i>
+                        <i class="fas fa-3x fa-hammer tm-icon"></i>
                     </div>
                     <div class="col-lg-5">
                         <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Деловодител</h2>
+                            <h2 class="tm-text-primary mb-4">Производство на строителни изделия от дървесина, врати и прозорци</h2>
                             <p class="mb-4 tm-intro-text">
-                                Описание </p>
+                                Първа степен на професионална квалификация </p>
                         </div>
                     </div>
+
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-leaf tm-icon"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Устойчива мода</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Първа, втора степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-tshirt tm-icon"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Текстилни технологии</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Първа степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-shoe-prints tm-icon"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Обувно производство</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Първа степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-building tm-icon"></i>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Строителство и архитектура</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Първа степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-cut tm-icon"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Фризьорство</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Втора степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-spa tm-icon"></i>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Козметични услуги</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Втора степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-hand-paper tm-icon"></i>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Маникюр, педикюр, ноктопластика</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Втора степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-utensils tm-icon"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Готварство</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Първа, втора степен на професионална квалификация </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fas fa-3x fa-hotel tm-icon"></i>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tm-intro-text-container">
+                            <h2 class="tm-text-primary mb-4">Хотелиерство</h2>
+                            <p class="mb-4 tm-intro-text">
+                                Първа степен на професионална квалификация </p>
+                        </div>
+                    </div>
+
 
                 </div>
 
             </div>
-            <div class="container">
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-12 col-xl-12">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Езикови компетентности</h2>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-1">
-                        <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Испански език</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-1">
-                        <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Английски език</h2>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-1">
-                        <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Гръцки език</h2>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-1">
-                        <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Френски език</h2>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="container">
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-12 col-xl-12">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Ключови компетентности</h2>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-1">
-                        <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Цифрова компетентност - базово ниво</h2>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-1">
-                        <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Цифрова компетентност - базово ниво</h2>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-1">
-                        <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4">Цифрова компетентност - базово ниво</h2>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
         </section>
     );
 }

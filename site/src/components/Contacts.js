@@ -33,9 +33,9 @@ export default function Contacts() {
                         </div>
 
                         <div class="contact-item">
-                            <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
+                            <a rel="nofollow" href="https://www.google.com/maps/place/Tsentar,+ul.+%22Vitosha%22+13,+2900+Gotse+Delchev/@41.5778405,23.7235616,17z/data=!3m1!4b1!4m6!3m5!1s0x14abbf86154f6eb3:0x7397aa2f860690e!8m2!3d41.5778365!4d23.7261365!16s%2Fg%2F11k4x4bjj5?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" class="item-link">
                                 <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                                <span class="mb-0">Вашият адрес</span>
+                                <span class="mb-0">гр. Гоце Делчев, ул. "Витоша" 13</span>
                             </a>
                         </div>
 
