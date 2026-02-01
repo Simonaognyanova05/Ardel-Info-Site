@@ -1,5 +1,16 @@
+import { Link } from 'react-router-dom';
+import {useAuth} from '../contexts/AuthContext';
+
 export default function Header() {
+    const {user} = useAuth();
+
+    const logged = (
+        <li class="nav-item">
+            <Link class="nav-link tm-nav-link" to="/messages">Съобщения</Link>
+        </li>
+    );
     return (
+
         <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
             <div class="container">
                 <div class="tm-next">
@@ -23,6 +34,7 @@ export default function Header() {
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#contact">Контакти</a>
                         </li>
+                        {user.email ? logged : ""}
                     </ul>
                 </div>
             </div>

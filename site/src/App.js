@@ -3,6 +3,7 @@ import Header from "./components/Header";
 
 import Login from "./components/Login";
 import AllPages from "./components/AllPages";
+import Messages from "./components/Messages/Messages";
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<AllPages />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/messages" element={<Messages />} />
+
       </Routes>
     </>
   );
