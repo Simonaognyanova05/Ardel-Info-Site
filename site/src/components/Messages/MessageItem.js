@@ -1,4 +1,19 @@
-export default function MessageItem({message}) {
+import { doc, deleteDoc } from "firebase/firestore";
+import { db } from "../../config/firebase";
+
+
+export default function MessageItem({ message }) {
+
+    const handleDelete = async (id) => {
+        const confirm = window.confirm("Сигурни ли сте, че съобщението е прочетено?");
+        if (!confirm) return;
+
+        try {
+            await deleteDoc(doc(db, "messages", id));
+        } catch (err) {
+            console.error("Грешка при изтриване:", err);
+        }
+    };
     return (
         <div className="card mb-4 shadow-sm">
             <div className="card-body">
@@ -13,6 +28,7 @@ export default function MessageItem({message}) {
             </div>
             <button
                 className="btn btn-sm btn-outline-success"
+                onClick={() => handleDelete(message.id)}
             >
                 Маркирай като прочетено
             </button>

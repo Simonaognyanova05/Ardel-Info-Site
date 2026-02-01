@@ -13,7 +13,7 @@ export default function Messages() {
             .catch(e => {
                 console.log(e);
             })
-    }, [])
+    }, [messages]);
 
     return (
         <section id="messages" className="tm-section-pad-top">
