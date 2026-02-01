@@ -3,7 +3,7 @@ import { getMessages } from "../../services/getMessages";
 import MessageItem from "./MessageItem";
 
 export default function Messages() {
-    const [messages, setMessages] = useState();
+    const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         getMessages()
@@ -26,7 +26,7 @@ export default function Messages() {
                         </h2>
 
                         {messages.map(x => {
-                            <MessageItem key={x.id} message={x} />
+                            return <MessageItem key={x.id} message={x} />
                         })}
                     </div>
                 </div>

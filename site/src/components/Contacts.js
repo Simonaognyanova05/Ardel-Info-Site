@@ -1,6 +1,30 @@
+import { sendMessage } from "../services/sendMessage";
 import Footer from "./Footer";
+import { useNavigate } from 'react-router-dom';
 
 export default function Contacts() {
+    const navigate = useNavigate();
+
+    const sendHandler = async (e) => {
+        e.preventDefault();
+
+        const { name, email, message } = Object.fromEntries(new FormData(e.currentTarget));
+        
+
+        try {
+            const result = await sendMessage(name, email, message);
+
+            if (result.status == 200) {
+                alert("Успешно изпращане на съобщението!");
+                e.target.reset();
+                navigate('/');
+            } else {
+                alert("Възникна грешка, моля опитайте по-късно!");
+            }
+        } catch (e) {
+            alert("Възникна грешка, моля опитайте по-късно!");
+        }
+    }
     return (
         <section id="contact" class="tm-section-pad-top tm-parallax-2">
 
@@ -16,7 +40,7 @@ export default function Contacts() {
                     </div>
 
                     <div class="col-sm-12 col-md-6">
-                        <form action="" method="get">
+                        <form action="" method="get" onSubmit={sendHandler}>
                             <input id="name" name="name" type="text" placeholder="Вашите имена" class="tm-input" required />
                             <input id="email" name="email" type="email" placeholder="Вашият имейл" class="tm-input" required />
                             <textarea id="message" name="message" rows="8" placeholder="Съобщение" class="tm-input" required></textarea>

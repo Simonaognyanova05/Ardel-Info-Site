@@ -4,7 +4,7 @@ export default function MessageItem({message}) {
             <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center mb-2">
                     <strong>{message.name}</strong>
-                    <small className="text-muted">{message.createdAt}</small>
+                    <small className="text-muted">{message.email}</small>
                 </div>
 
                 <p className="mb-0">
