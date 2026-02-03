@@ -25,8 +25,11 @@ export default function Header() {
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#infinite">Начало</a>
                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#about">За нас</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#whatwedo">За нас</a>
+                            <a class="nav-link tm-nav-link" href="#whatwedo">Компетентности</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#gallery">Лицензи</a>

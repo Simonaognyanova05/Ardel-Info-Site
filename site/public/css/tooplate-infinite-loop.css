@@ -147,37 +147,42 @@ blockquote {
 
 #infinite {
   background-color: #222;
-  background-image: url(../img/image.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   height: 100vh;
   min-height: 375px;
   position: relative;
 }
 
-
-@media (min-width: 992px) {
+@media (min-height: 600px) and (min-width: 1920px) {
   #infinite {
-    background-position: center -220px;
+    background-size: cover;
   }
 }
 
-@media (max-width: 991px) {
+@media (min-height: 830px) {
   #infinite {
-    height: 70vh;              /* по-малко рязане */
-    min-height: 420px;
-    background-position: center center;
+    background-position: center -210px;
   }
 }
 
-@media (max-width: 480px) {
+@media (min-height: 680px) and (max-height: 829px) {
   #infinite {
-    height: 60vh;
-    min-height: 360px;
+    background-position: center -300px;
   }
 }
 
+@media (min-height: 500px) and (max-height: 679px) {
+  #infinite {
+    background-position: center -400px;
+  }
+}
+
+@media (max-height: 499px) {
+  #infinite {
+    background-position: center -450px;
+  }
+}
 
 
 .tm-hero-text-container {
