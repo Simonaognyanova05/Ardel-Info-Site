@@ -8,7 +8,8 @@ export default function Competencies() {
         <section id="whatwedo" class="tm-section-pad-top">
 
             <div class="container">
-                <h2 class="tm-text-primary mb-4 tm-section-title" style={{ textAlign: "center" }}>Компетентности</h2>
+                <h2 class="tm-text-primary mb-4 tm-section-title" style={{ textAlign: "center" }}>Професионални обучения</h2>
+                <br />
                 <div class="row tm-content-box">
                     <div class="col-lg-1">
                         <i class="fas fa-3x fa-briefcase tm-icon"></i>

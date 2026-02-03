@@ -9,7 +9,7 @@ export default function Contacts() {
         e.preventDefault();
 
         const { name, email, message } = Object.fromEntries(new FormData(e.currentTarget));
-        
+
 
         try {
             const result = await sendMessage(name, email, message);
@@ -50,9 +50,9 @@ export default function Contacts() {
 
                     <div class="col-sm-12 col-md-6">
                         <div class="contact-item">
-                            <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
+                            <a rel="nofollow" href="mailto:ardel.group@abv.bg" class="item-link">
                                 <i class="far fa-2x fa-envelope mr-4"></i>
-                                <span class="mb-0">mail@company.com</span>
+                                <span class="mb-0">ardel.group@abv.bg</span>
                             </a>
                         </div>
 
@@ -62,14 +62,6 @@ export default function Contacts() {
                                 <span class="mb-0">гр. Гоце Делчев, ул. "Витоша" 13</span>
                             </a>
                         </div>
-
-                        <div class="contact-item">
-                            <a rel="nofollow" href="tel:0100200340" class="item-link">
-                                <i class="fas fa-2x fa-phone-square mr-4"></i>
-                                <span class="mb-0">0888888888</span>
-                            </a>
-                        </div>
-
                         <div class="contact-item">&nbsp;</div>
 
                     </div>

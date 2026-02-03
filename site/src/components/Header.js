@@ -29,7 +29,10 @@ export default function Header() {
                             <a class="nav-link tm-nav-link" href="#about">За нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#whatwedo">Компетентности</a>
+                            <a class="nav-link tm-nav-link" href="#whatwedo">Обучения</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tm-nav-link" href="#whatwedo">Многоезикови компетентности</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#gallery">Лицензи</a>
@@ -37,7 +40,7 @@ export default function Header() {
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#contact">Контакти</a>
                         </li>
-                        {user.email ? logged : ""}
+                        {/* {user.email ? logged : ""} */}
                     </ul>
                 </div>
             </div>
