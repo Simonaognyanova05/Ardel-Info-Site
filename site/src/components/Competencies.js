@@ -3,23 +3,10 @@ export default function Competencies() {
         <section id="whatwedo" class="tm-section-pad-top">
 
             <div class="container">
-
-                <div class="row tm-content-box">
-                    <div class="col-lg-12 col-xl-12">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4 tm-section-title">За нас</h2>
-                            <p class="mb-4 tm-intro-text">
-                                Ние сме екип от мотивирани професионалисти, които вярват в качеството, коректността и отговорния подход към всяка дейност, с която се ангажираме. Работим в съответствие с изискванията на българското законодателство и притежаваме необходимия лиценз за извършване на нашата дейност.
-                                Нашата мисия е да предлагаме надеждни решения и услуги, насочени към реалните нужди на нашите клиенти, като залагаме на прозрачност, професионализъм и устойчиво развитие. Стремим се да изграждаме дългосрочни партньорства, основани на доверие и качество.</p>
-                        </div>
-                    </div>
-
-                </div>
-
+                <h2 class="tm-text-primary mb-4 tm-section-title" style={{ textAlign: "center" }}>Компетентности</h2>
                 <div class="row tm-content-box">
                     <div class="col-lg-1">
                         <i class="fas fa-3x fa-briefcase tm-icon"></i>
-
                     </div>
                     <div class="col-lg-5">
                         <div class="tm-intro-text-container">

@@ -1,6 +1,7 @@
 import Competencies from "./Competencies";
 import Contacts from "./Contacts";
 import Gallery from "./Gallery";
+import About from "./About";
 import Home from "./Home";
 
 export default function AllPages() {
@@ -10,6 +11,7 @@ export default function AllPages() {
                 <Home />
             </section>
 
+            <About />
             <Competencies />
             <Gallery />
             <Contacts />
