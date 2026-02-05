@@ -804,3 +804,17 @@ p {
     transform: rotate(180deg);
   }
 }
+
+@media (max-width: 767px) {
+
+  /* Скриваме го изрично, ако класът .open липсва */
+  .tm-dropdown:not(.open) .tm-dropdown-menu {
+    display: none !important;
+  }
+
+  .tm-dropdown.open .tm-dropdown-menu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}

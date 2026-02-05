@@ -4,13 +4,14 @@ import { useState } from 'react';
 
 export default function Header() {
     const { user } = useAuth();
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const toggleMenu = (e) => {
-        // Предотвратяваме прескачане на страницата, ако е линк
+    const toggleDropdown = (e) => {
+        // Проверяваме дали сме на мобилно устройство (под 768px)
         if (window.innerWidth < 768) {
-            e.preventDefault();
-            setIsMobileMenuOpen(!isMobileMenuOpen);
+            e.preventDefault(); // Спира прескачането на страницата
+            e.stopPropagation(); // Спира разпространението на събитието
+            setIsDropdownOpen(prev => !prev); // Превключва: ако е true -> false, ако е false -> true
         }
     };
 
@@ -38,26 +39,19 @@ export default function Header() {
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#about">За нас</a>
                         </li>
-                        <li className={`nav-item dropdown tm-dropdown ${isMobileMenuOpen ? 'open' : ''}`}>
+                        <li className={`nav-item dropdown tm-dropdown ${isDropdownOpen ? 'open' : ''}`}>
                             <span
                                 className="nav-link tm-nav-link dropdown-toggle"
-                                onClick={toggleMenu}
-                                style={{ cursor: 'pointer' }}
+                                onClick={toggleDropdown}
+                                style={{ cursor: 'pointer', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}
                             >
                                 Обучения
                             </span>
 
+                            {/* Менюто се показва само ако isDropdownOpen е true (за мобилни) */}
                             <ul className="dropdown-menu tm-dropdown-menu">
-                                <li>
-                                    <a className="dropdown-item" href="#whatwedo">
-                                        Професионални обучения
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="dropdown-item" href="#whatwedo">
-                                        Многоезикови компетентности
-                                    </a>
-                                </li>
+                                <li><a className="dropdown-item" href="#whatwedo" onClick={() => setIsDropdownOpen(false)}>Професионални обучения</a></li>
+                                <li><a className="dropdown-item" href="#whatwedo" onClick={() => setIsDropdownOpen(false)}>Многоезикови компетентности</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
