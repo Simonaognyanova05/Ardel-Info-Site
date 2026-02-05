@@ -66,7 +66,7 @@ export default function Header() {
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#contact">Контакти</a>
                         </li>
-                        {/* {user.email ? logged : ""} */}
+                        {user.email ? logged : ""}
                     </ul>
                 </div>
             </div>
