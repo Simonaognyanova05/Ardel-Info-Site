@@ -1,8 +1,18 @@
 import { Link } from 'react-router-dom';
-import {useAuth} from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
+import { useState } from 'react';
 
 export default function Header() {
-    const {user} = useAuth();
+    const { user } = useAuth();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMenu = (e) => {
+        // Предотвратяваме прескачане на страницата, ако е линк
+        if (window.innerWidth < 768) {
+            e.preventDefault();
+            setIsMobileMenuOpen(!isMobileMenuOpen);
+        }
+    };
 
     const logged = (
         <li class="nav-item">
@@ -25,14 +35,30 @@ export default function Header() {
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#infinite">Начало</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#about">За нас</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#whatwedo">Обучения</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#whatwedo">Многоезикови компетентности</a>
+                        <li className={`nav-item dropdown tm-dropdown ${isMobileMenuOpen ? 'open' : ''}`}>
+                            <span
+                                className="nav-link tm-nav-link dropdown-toggle"
+                                onClick={toggleMenu}
+                                style={{ cursor: 'pointer' }}
+                            >
+                                Обучения
+                            </span>
+
+                            <ul className="dropdown-menu tm-dropdown-menu">
+                                <li>
+                                    <a className="dropdown-item" href="#whatwedo">
+                                        Професионални обучения
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="dropdown-item" href="#whatwedo">
+                                        Многоезикови компетентности
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#gallery">Лицензи</a>

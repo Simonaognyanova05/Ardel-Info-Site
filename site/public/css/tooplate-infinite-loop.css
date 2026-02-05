@@ -717,3 +717,100 @@ p {
     margin-bottom: 30px;
   }
 }
+
+/* ============================= */
+/* NAVBAR DROPDOWN (DESKTOP) */
+/* ============================= */
+
+.tm-dropdown {
+  position: relative;
+}
+
+.tm-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 240px;
+  padding: 8px 0;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 999;
+}
+
+.tm-dropdown:hover .tm-dropdown-menu {
+  display: block;
+}
+
+.tm-dropdown-menu li {
+  list-style: none;
+}
+
+.tm-dropdown-menu .dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  color: #369;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.tm-dropdown-menu .dropdown-item:hover {
+  background-color: #369;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+  /* Основният контейнер на дропдауна */
+  .tm-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  /* Падащото меню - Ключови промени тук */
+  .tm-dropdown-menu {
+    position: static !important;
+    /* Връща го в нормалния поток на документа */
+    display: none;
+    float: none;
+    width: 100% !important;
+    box-shadow: none;
+    background-color: #f9f9f9;
+    /* Леко сив фон, за да се вижда, че е вътре */
+    border: none;
+    padding: 0;
+    margin: 0;
+    transform: none !important;
+    /* Премахва евентуални измествания */
+  }
+
+  /* Когато е отворено */
+  .tm-dropdown.open .tm-dropdown-menu {
+    display: block;
+  }
+
+  /* Самите елементи вътре */
+  .tm-dropdown-menu .dropdown-item {
+    padding: 12px 25px !important;
+    /* Повече място за цъкане с пръст */
+    text-align: right;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eee;
+    white-space: normal;
+    /* Позволява на текста да се пренася, ако е дълъг */
+  }
+
+  /* Стрелката на главния бутон */
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.3s;
+  }
+
+  .tm-dropdown.open .dropdown-toggle::after {
+    transform: rotate(180deg);
+    /* Стрелката се обръща нагоре при отваряне */
+  }
+}

@@ -178,7 +178,7 @@ export default function Competencies() {
                                     <ul>
                                         <li><strong>Код СППОО:</strong> 072301</li>
                                         <li><strong>Степен на обучение:</strong> първа и втора</li>
-                                        <li><strong>Часове:</strong> 300 и 600</li>
+                                        <li><strong>Часове:</strong> 300 и 660</li>
                                     </ul>
                                 </div>
                             )}
